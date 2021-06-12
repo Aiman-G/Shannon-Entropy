@@ -74,4 +74,25 @@ def Occurance_rate_func(pop,g): # g is a networkx graph
     Normalized_Shannon=Shanon_index/(Shannon_of_restTerms+math.log(n))
     
     return Normalized_Shannon
+
+
+# to get sample of the pop
+You need Networkx, to generate a graph. 
+
+
+def get_sample(g,src,dst):
+  
+    number_of_paths=0
+    SomePaths=[]
+    for path in nx.all_simple_paths(g, source=src, target=dst): # provide your graph, and a pair of source and destination 
+        number_of_paths=number_of_paths+1
+        SomePaths.append(path)
+        if number_of_paths== Some_number:
+            break
+  return SomePaths
+
+            
+     
+                                    
+
     

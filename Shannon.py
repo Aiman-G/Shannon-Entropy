@@ -76,7 +76,7 @@ def Occurance_rate_func(pop,g): # g is a networkx graph
     return Normalized_Shannon
 
 
-# to get sample of the pop
+# to get a sample of the pop
 You need Networkx, to generate a graph. 
 
 

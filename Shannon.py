@@ -77,7 +77,7 @@ def Occurance_rate_func(pop,g): # g is a networkx graph
 
 
 # to get a sample of the pop
-You need Networkx, to generate a graph. 
+#You need Networkx, to generate a graph. 
 
 
 def get_sample(g,src,dst):

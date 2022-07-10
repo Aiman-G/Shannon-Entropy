@@ -80,14 +80,21 @@ def Occurance_rate_func(pop,g): # g is a networkx graph
 #You need Networkx, to generate a graph. 
 
 
-def get_sample(g,src,dst):
+def get_sample(g,src,dst,No_paths):
+    '''
+    g is the graph
+    src is the source node
+    dst is the destination node 
+    
+    No_paths is the number of paths we want to sample 
+    '''
   
     number_of_paths=0
     SomePaths=[]
     for path in nx.all_simple_paths(g, source=src, target=dst): # provide your graph, and a pair of source and destination 
         number_of_paths=number_of_paths+1
         SomePaths.append(path)
-        if number_of_paths== Some_number:
+        if number_of_paths== No_paths:
             break
   return SomePaths
 
